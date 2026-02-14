@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
-  publish = ".next/server/app"
+  # הסרנו את שורת ה-publish שגרמה לשגיאה
+  environment = { NODE_VERSION = "20" }
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
